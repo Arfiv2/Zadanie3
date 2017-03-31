@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="80px"
+            android:textColor="#f000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obrazki"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/android"
+            android:contentDescription=""
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="430dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Powrót"
+            android:onClick="Powrot"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zmień"
+            android:onClick="zmienObrazek"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:onClick="Poprzedni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Poprzedni"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
